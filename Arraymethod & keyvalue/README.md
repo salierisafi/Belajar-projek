@@ -7,6 +7,7 @@ Array Method Dasar :
 2. Unique
 3. Split
 4. Sort
+5. Reverse
 
 Belajar Variabel keyvalue, seperti:
 dictionary, object, struct
