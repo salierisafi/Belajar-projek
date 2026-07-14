@@ -8,6 +8,7 @@ Array Method Dasar :
 3. Split
 4. Sort
 5. Reverse
+6. slicing
 
 Belajar Variabel keyvalue, seperti:
 dictionary, object, struct
