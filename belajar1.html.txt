@@ -1,0 +1,49 @@
+<!--Ini komentar-->
+<html>
+  <head><!--Tidak ditampilkan di layar-->
+     <title>Ini Judul</title>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- 2. Responsive -->
+    <style>
+       /*Ini Komentar CSS*/
+       h1 { /*selector = semua tag h1*/
+         color: red;
+       }
+       .paragraf { /*selector = class paragraf pakai "." */
+         /* Bisa juga : [class="paragraf"] */
+         
+         /*=====properti : nilai =====*/
+         color: #00ff00; /*hijau*/
+         padding: 20px 30px 40px 50px;
+         /*jarak elemen dari Border*/
+         /*urutan : atas kanan bawah kiri */
+         /*background= mengisi padding*/
+         border: 40px solid black; 
+         /*Ketebalan dan warna Border*/
+         /*40 segala sisi*/
+         border-radius : 10%; /*rounded*/
+         /*Ini kelengkungan sudut Border, kalau 50% jadi lingkaran/oval*/
+         margin:40px 30px;
+        /*Urutan : atas-bawah kiri-kanan*/
+        /* Jarak Border ke elemen lain*/
+        background-color:blue;
+       }
+    </style>
+  </head><!--Ini ditampilkan di layar-->
+  <body>
+    <h1>Header 1, bisa h1-h6</h1>
+    <p class="paragraf">Halo semua</p>
+    <button id="ubah">Ubah</button>
+    <script>
+      //Ini javascript 
+      // DOM, untuk definisi selektor elemen
+      const tmbl = document.querySelector("#ubah"); // selector = id ubah pakai "#"
+      // bisa pakai "[id='ubah']"
+
+      // Jika tmbl mendapatkan klik, maka :
+      tmbl.addEventListener('click',()=>{
+         document.querySelector(".paragraf").textContent = "Halo";
+      });
+    </script>
+  </body>
+</html>
