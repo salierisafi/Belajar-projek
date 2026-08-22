@@ -24,7 +24,8 @@ Multibaris
 	//input
 	std::cout << "Masukan Nama :";
 	std::string nama;//deklare
-	std::cin >> nama;
+	std::cin >> nama; // kalau variabel lebih dari dua kata(mengandung spasi), dan merupakan string
+	// bisa pakai std::getline(std::cin, nama);
 	std::cout << "Halo " << nama <<" apa kabar?";
 
 	return 0;
